@@ -1,0 +1,114 @@
+/* General styling for the header container */
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0; /* Sticks to the top */
+  z-index: 1000;
+  background-color: #e8f5e9; /* Light green background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  height: 80px;
+}
+
+/* Style for the main title link */
+.Home {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2e7d32; /* Forest green color */
+  transition: color 0.3s ease-in-out;
+}
+
+.Home img {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+  border-radius: 100%; /* Make the image circular */
+}
+
+.Home h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Hover effect for the title link */
+.Home:hover {
+  color: #1b5e20; /* Darker green on hover */
+}
+
+/* Navigation bar styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-right: 2rem;
+}
+
+.nav0 {
+  display: flex;
+  gap: 1rem; /* Space between nav items */
+}
+
+.nav1,
+.nav2,
+.nav3 {
+  display: flex;
+  align-items: center;
+}
+
+.nav1 a,
+.nav2 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4caf50; /* Medium green color */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Icons in the nav links */
+.nav1 img,
+.nav2 img {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Hover effects for nav links */
+.nav1 a:hover,
+.nav2 a:hover {
+  background-color: #a5d6a7; /* Light green background */
+  color: #1b5e20; /* Darker green text */
+}
+
+/* Logout button styling */
+.logout-btn {
+  background-color: #66bb6a; /* Light green button background */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover effect for logout button */
+.logout-btn:hover {
+  background-color: #388e3c; /* Darker green background */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav0 {
+    flex-direction: column;
+    gap: 0.5rem; /* Reduce spacing for small screens */
+  }
+
+  .Home h1 {
+    font-size: 1.4rem; /* Smaller title on small screens */
+  }
+}

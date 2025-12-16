@@ -1,0 +1,121 @@
+/* Container for the signup form */
+.formsign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  background-color: #d6e091; /* Light background */
+  transition: transform 0.3s ease-in-out;
+}
+
+.signup {
+  /* background: url("../images/login2.jpg") center / cover no-repeat; */
+  /* background-color: #2ac722;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png"); */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect to slightly enlarge the form */
+.formsign:hover {
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Form title */
+.formsign h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Input fields */
+.formsign input[type="text"],
+.formsign input[type="email"],
+.formsign input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect for input fields */
+.formsign input[type="text"]:focus,
+.formsign input[type="email"]:focus,
+.formsign input[type="password"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+/* Signup button */
+.formsign button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the signup button */
+.formsign button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+  .formsign {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.leftsign,
+.rightsign {
+  flex: 1;
+}
+
+.leftsign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional: Change background color if needed */
+}
+
+.leftsign img {
+  max-width: 100%;
+  max-height: 60%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the area appropriately */
+}
+
+.rightsign {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional: Change background color if needed */
+}
+
+.rightsign h1 {
+  margin-bottom: 15px;
+}
+
+.rightsign p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}

@@ -1,0 +1,132 @@
+/* HeroContentLeft.module.css */
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFncmljdWx0dXJlfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+/* Container */
+.container {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  /* align-items: center; */
+  padding-bottom: 96px; /* Assuming --mantine-spacing-xl is around 16px * 6 */
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* Example breakpoint */
+  .container {
+    height: 500px;
+    padding-bottom: 48px; /* Assuming --mantine-spacing-xl * 3 */
+  }
+}
+
+/* Title */
+.titlestart {
+  color: white; /* Assuming --mantine-color-white is white */
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  /* Example breakpoint */
+  .titlestart {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Example breakpoint */
+  .titlestart {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+}
+
+/* Description */
+.description {
+  color: white; /* Assuming --mantine-color-white is white */
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  /* Example breakpoint */
+  .description {
+    max-width: 100%;
+    font-size: 30px; /* Assuming --mantine-font-size-sm */
+    font-weight: 800;
+  }
+}
+
+/* Control */
+.control {
+  margin-top: 24px; /* Assuming --mantine-spacing-xl is around 16px * 1.5 */
+}
+
+@media (max-width: 768px) {
+  /* Example breakpoint */
+  .control {
+    width: 100%;
+  }
+}
+
+/* Button CSS */
+.buttonlogin {
+  display: inline-block; /* Ensures it behaves like an inline element but accepts width and height */
+  padding: 15px 30px; /* Provides spacing inside the button */
+  font-size: 16px; /* Sets the font size */
+  color: #ffffff; /* Sets the text color to white */
+  background: linear-gradient(
+    90deg,
+    #ff7e5f,
+    #feb47b
+  ); /* Creates a gradient background */
+  border: none; /* Removes the default border */
+  border-radius: 30px; /* Rounds the corners */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  text-decoration: none; /* Removes any text underline */
+  text-align: center; /* Centers the text */
+  transition: background 0.3s, transform 0.3s; /* Adds smooth transition effects */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.buttonlogin:hover {
+  background: linear-gradient(
+    90deg,
+    #feb47b,
+    #ff7e5f
+  ); /* Slightly changes the gradient on hover */
+  transform: translateY(
+    -2px
+  ); /* Moves the button up slightly on hover for a lifted effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhances the shadow on hover */
+}
+
+.buttonlogin:active {
+  transform: translateY(
+    0
+  ); /* Returns the button to its original position on click */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Returns the shadow to its original state on click */
+  background: linear-gradient(
+    90deg,
+    #ff7e5f,
+    #feb47b
+  ); /* Resets the gradient on click */
+}
+
+.logandsignbutton {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}

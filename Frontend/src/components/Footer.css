@@ -1,0 +1,63 @@
+/* Container for the footer */
+.footer {
+  background-color: #e8f5e9; /* Light green background for nature feel */
+  color: #2e7d32; /* Deep green color for text */
+  padding: 1rem 0; /* Vertical padding for the footer */
+  text-align: center; /* Center align the text */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on the top */
+  border-top: 4px solid #a5d6a7; /* Light green top border */
+  border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+  margin-top: 0rem; /* Space above the footer */
+}
+
+/* Container inside the footer for content alignment */
+.footer .container123 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Content within the footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the footer text */
+.footer-text {
+  font-size: 1.2rem; /* Slightly larger text size */
+  font-weight: bold;
+  margin: 0.5rem 0; /* Vertical margin for spacing */
+}
+
+/* Styling for contact details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contact info styling */
+.contact-info {
+  font-size: 1rem; /* Standard text size */
+  margin: 0.5rem 0; /* Vertical margin for spacing */
+}
+
+/* Icon styling */
+.icon {
+  color: #388e3c; /* Medium green color for the icon */
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1.2rem; /* Slightly larger icon size */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .footer-text {
+    font-size: 1rem; /* Smaller text on smaller screens */
+  }
+
+  .contact-info {
+    font-size: 0.9rem; /* Smaller text for contact info on smaller screens */
+  }
+}

@@ -1,0 +1,125 @@
+/* Container for the login form */
+.formlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -220px;
+  width: 300px;
+  margin: 50px auto; /* Center the form and add top margin */
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  background-color: #d6e091; /* White background */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login {
+  /* background: url("../images/login2.jpg") center / cover no-repeat; */
+  /* background-color: #2ac722;
+  background-image: url("../images/loginsideimage.jpg"); */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* min-height: 100vh; */
+
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect to slightly enlarge the form */
+.formlog:hover {
+  transform: scale(1.02); /* Slightly enlarge */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+}
+
+/* form title */
+.formlog h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Input fields */
+.formlog input[type="text"],
+.formlog input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect for input fields */
+.formlog input[type="text"]:focus,
+.formlog input[type="password"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a blue shadow */
+}
+
+/* Login button */
+.formlog button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #5b3f25;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the login button */
+.formlog button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+  .formlog {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+.leftlog,
+.rightlog {
+  flex: 1;
+}
+
+.leftlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f0f0f0; /* Optional: Change background color if needed */
+}
+
+.leftlog img {
+  max-width: 100%;
+
+  max-height: 60%;
+  object-fit: cover; /* Ensures the image covers the area appropriately */
+}
+
+.rightlog {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Optional: Change background color if needed */
+}
+
+.right-half h1 {
+  margin-bottom: 15px;
+}
+
+.right-half p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
