@@ -1,6 +1,8 @@
 const mysql = require("mysql2/promise");
+const path = require("path");
 
-require("dotenv").config();
+// Load Backend/.env explicitly so the DB config is available
+require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
 
 const pool = mysql.createPool({
   host: process.env.HOST,
@@ -12,14 +14,7 @@ const pool = mysql.createPool({
   queueLimit: 0,
 });
 
-(async () => {
-  try {
-    const connection = await pool.getConnection();
-    console.log("Connected to MySQL database");
-    connection.release();
-  } catch (err) {
-    console.error("Error connecting to MySQL:", err);
-  }
-})();
+// NOTE: do not attempt a test connection here to avoid startup failures
+// when DB credentials are missing or when running the frontend-only flow.
 
 module.exports = pool;

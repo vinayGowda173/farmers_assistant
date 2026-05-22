@@ -11,21 +11,15 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post(
-        `http://localhost:3051/login`,
-        {
-          email,
-          password,
-        }
-      );
-      // Store the JWT token in local storage or cookie
-      localStorage.setItem("token", response.data.token);
-      navigate("/home");
-    } catch (error) {
-      console.error("There was an error logging in!", error);
-      alert("Invalid credentials. Please try again.");
+    // Temporary: for now, just require non-empty email/password
+    // and navigate to home without contacting backend.
+    if (!email || !password) {
+      alert("Please enter both email and password.");
+      return;
     }
+
+    // Navigate to home page
+    navigate("/home");
   };
 
   return (
